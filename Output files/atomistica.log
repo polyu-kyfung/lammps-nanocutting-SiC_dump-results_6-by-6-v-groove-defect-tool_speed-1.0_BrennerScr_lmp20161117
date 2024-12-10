@@ -1,0 +1,2260 @@
+Welcome to - LAMMPS+Atomistica -
+
+   Atomistica revision:  0+unknown
+   Atomistica rev date:  None
+   Atomistica URL:       N/A
+
+   architecture:         x86_64
+
+   build host:           chris-Precision-T7610
+   build date:           Jan 26 2017 16:53:47
+   compiler version:     GNU Fortran (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
+   compile options:      -D_MPI -DLAMMPS -DNO_BIND_C_OPTIONAL -O3 -funroll-loops -DHAVE_FFTW3 -DHAVE_CUDA -I/usr//include -I/usr//include/mpi -ffree-form -ffree-line-length-none -x f95-cpp-input -I. -I../src -I../src/support -I../src/potentials
+
+   run date:             Mar 28 2019 15:31:23
+
+   Using MPI:            32 processes
+
+- brenner_scr -
+     Using database: Erhart P., Albe K., Phys. Rev. B 71, 035211 (2005)
+     el(1)  = C
+     el(2)  = Si
+     D0     =   0.60000000000000000E+01  0.43600000000000003E+01  0.32400000000000002E+01
+     r0     =   0.14276000000000000E+01  0.17900000000000000E+01  0.22320000000000002E+01
+     S      =   0.21669999999999998E+01  0.18470000000000000E+01  0.18420000000000001E+01
+     beta   =   0.20099000000000000E+01  0.16991000000000001E+01  0.14761000000000000E+01
+     gamma  =   0.11233000000000000E+00  0.11877000000000000E-01  0.11435400000000000E+00
+     c      =   0.18191000000000000E+03  0.27398700000000000E+06  0.20049399999999999E+01
+     d      =   0.62843299999999997E+01  0.18031399999999999E+03  0.81472000000000000E+00
+     h      =   0.55559999999999998E+00  0.68000000000000005E+00  0.25900000000000001E+00
+     mu     =   0.70047632390025216E+00  0.55865921787709494E+00  0.54288816503800219E+00
+     n      =   0.10000000000000000E+01  0.10000000000000000E+01  0.10000000000000000E+01
+     m      = 3 3 3
+     r1     =   0.20000000000000000E+01  0.22360679774997898E+01  0.25000000000000000E+01
+     r2     =   0.23999999999999999E+01  0.26832815729997477E+01  0.30000000000000000E+01
+     or1    =   0.20000000000000000E+01  0.24494897427831779E+01  0.30000000000000000E+01
+     or2    =   0.40000000000000000E+01  0.48989794855663558E+01  0.60000000000000000E+01
+     bor1   =   0.20000000000000000E+01  0.24494897427831779E+01  0.30000000000000000E+01
+     bor2   =   0.40000000000000000E+01  0.48989794855663558E+01  0.60000000000000000E+01
+     Cmin   =   0.10000000000000000E+01  0.10000000000000000E+01  0.10000000000000000E+01
+     Cmax   =   0.30000000000000000E+01  0.30000000000000000E+01  0.30000000000000000E+01
+- neighbors_dump_cutoffs -
+     Communication border is .00000000000000000
+     1-1 (Z = 6-6), cutoff = 4.24264068711928477
+     1-2 (Z = 6-14), cutoff = 5.19615242270663114
+     1-3 (Z = 6-6), cutoff = 4.24264068711928477
+     2-2 (Z = 14-14), cutoff = 6.36396103067892760
+     2-3 (Z = 14-6), cutoff = 5.19615242270663114
+     3-3 (Z = 6-6), cutoff = 4.24264068711928477
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1696465
+     snebsize = 1696465
+     Memory estimate: 258.86001586914062500 MB
+
+- brenner_scr -
+     Using database: Erhart P., Albe K., Phys. Rev. B 71, 035211 (2005)
+     el(1)  = C
+     el(2)  = Si
+     D0     =   0.60000000000000000E+01  0.43600000000000003E+01  0.32400000000000002E+01
+     r0     =   0.14276000000000000E+01  0.17900000000000000E+01  0.22320000000000002E+01
+     S      =   0.21669999999999998E+01  0.18470000000000000E+01  0.18420000000000001E+01
+     beta   =   0.20099000000000000E+01  0.16991000000000001E+01  0.14761000000000000E+01
+     gamma  =   0.11233000000000000E+00  0.11877000000000000E-01  0.11435400000000000E+00
+     c      =   0.18191000000000000E+03  0.27398700000000000E+06  0.20049399999999999E+01
+     d      =   0.62843299999999997E+01  0.18031399999999999E+03  0.81472000000000000E+00
+     h      =   0.55559999999999998E+00  0.68000000000000005E+00  0.25900000000000001E+00
+     mu     =   0.70047632390025216E+00  0.55865921787709494E+00  0.54288816503800219E+00
+     n      =   0.10000000000000000E+01  0.10000000000000000E+01  0.10000000000000000E+01
+     m      = 3 3 3
+     r1     =   0.20000000000000000E+01  0.22360679774997898E+01  0.25000000000000000E+01
+     r2     =   0.23999999999999999E+01  0.26832815729997477E+01  0.30000000000000000E+01
+     or1    =   0.20000000000000000E+01  0.24494897427831779E+01  0.30000000000000000E+01
+     or2    =   0.40000000000000000E+01  0.48989794855663558E+01  0.60000000000000000E+01
+     bor1   =   0.20000000000000000E+01  0.24494897427831779E+01  0.30000000000000000E+01
+     bor2   =   0.40000000000000000E+01  0.48989794855663558E+01  0.60000000000000000E+01
+     Cmin   =   0.10000000000000000E+01  0.10000000000000000E+01  0.10000000000000000E+01
+     Cmax   =   0.30000000000000000E+01  0.30000000000000000E+01  0.30000000000000000E+01
+- neighbors_dump_cutoffs -
+     Communication border is .00000000000000000
+     1-1 (Z = 6-6), cutoff = 4.24264068711928477
+     1-2 (Z = 6-14), cutoff = 5.19615242270663114
+     1-3 (Z = 6-6), cutoff = 4.24264068711928477
+     2-2 (Z = 14-14), cutoff = 6.36396103067892760
+     2-3 (Z = 14-6), cutoff = 5.19615242270663114
+     3-3 (Z = 6-6), cutoff = 4.24264068711928477
+
+- brenner_scr -
+     Using database: Erhart P., Albe K., Phys. Rev. B 71, 035211 (2005)
+     el(1)  = C
+     el(2)  = Si
+     D0     =   0.60000000000000000E+01  0.43600000000000003E+01  0.32400000000000002E+01
+     r0     =   0.14276000000000000E+01  0.17900000000000000E+01  0.22320000000000002E+01
+     S      =   0.21669999999999998E+01  0.18470000000000000E+01  0.18420000000000001E+01
+     beta   =   0.20099000000000000E+01  0.16991000000000001E+01  0.14761000000000000E+01
+     gamma  =   0.11233000000000000E+00  0.11877000000000000E-01  0.11435400000000000E+00
+     c      =   0.18191000000000000E+03  0.27398700000000000E+06  0.20049399999999999E+01
+     d      =   0.62843299999999997E+01  0.18031399999999999E+03  0.81472000000000000E+00
+     h      =   0.55559999999999998E+00  0.68000000000000005E+00  0.25900000000000001E+00
+     mu     =   0.70047632390025216E+00  0.55865921787709494E+00  0.54288816503800219E+00
+     n      =   0.10000000000000000E+01  0.10000000000000000E+01  0.10000000000000000E+01
+     m      = 3 3 3
+     r1     =   0.20000000000000000E+01  0.22360679774997898E+01  0.25000000000000000E+01
+     r2     =   0.23999999999999999E+01  0.26832815729997477E+01  0.30000000000000000E+01
+     or1    =   0.20000000000000000E+01  0.24494897427831779E+01  0.30000000000000000E+01
+     or2    =   0.40000000000000000E+01  0.48989794855663558E+01  0.60000000000000000E+01
+     bor1   =   0.20000000000000000E+01  0.24494897427831779E+01  0.30000000000000000E+01
+     bor2   =   0.40000000000000000E+01  0.48989794855663558E+01  0.60000000000000000E+01
+     Cmin   =   0.10000000000000000E+01  0.10000000000000000E+01  0.10000000000000000E+01
+     Cmax   =   0.30000000000000000E+01  0.30000000000000000E+01  0.30000000000000000E+01
+- neighbors_dump_cutoffs -
+     Communication border is .00000000000000000
+     1-1 (Z = 6-6), cutoff = 4.24264068711928477
+     1-2 (Z = 6-14), cutoff = 5.19615242270663114
+     1-3 (Z = 6-6), cutoff = 4.24264068711928477
+     2-2 (Z = 14-14), cutoff = 6.36396103067892760
+     2-3 (Z = 14-6), cutoff = 5.19615242270663114
+     3-3 (Z = 6-6), cutoff = 4.24264068711928477
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 142
+     nebmax   = 214
+     nebsize  = 1672903
+     snebsize = 1672903
+     Memory estimate: 255.26473999023437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 142
+     nebmax   = 214
+     nebsize  = 1673329
+     snebsize = 1673329
+     Memory estimate: 255.32974243164062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 142
+     nebmax   = 214
+     nebsize  = 1674749
+     snebsize = 1674749
+     Memory estimate: 255.54641723632812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 142
+     nebmax   = 214
+     nebsize  = 1676027
+     snebsize = 1676027
+     Memory estimate: 255.74142456054687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1701415
+     snebsize = 1701415
+     Memory estimate: 259.61532592773437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1704561
+     snebsize = 1704561
+     Memory estimate: 260.09536743164062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1716287
+     snebsize = 1716287
+     Memory estimate: 261.88461303710937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1721149
+     snebsize = 1721149
+     Memory estimate: 262.62649536132812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1723580
+     snebsize = 1723580
+     Memory estimate: 262.99743652343750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1724009
+     snebsize = 1724009
+     Memory estimate: 263.06289672851562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1724152
+     snebsize = 1724152
+     Memory estimate: 263.08471679687500000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1736065
+     snebsize = 1736065
+     Memory estimate: 264.90249633789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1738738
+     snebsize = 1738738
+     Memory estimate: 265.31036376953125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1750178
+     snebsize = 1750178
+     Memory estimate: 267.05596923828125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1760045
+     snebsize = 1760045
+     Memory estimate: 268.56155395507812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1762333
+     snebsize = 1762333
+     Memory estimate: 268.91067504882812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1763048
+     snebsize = 1763048
+     Memory estimate: 269.01977539062500000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1764764
+     snebsize = 1764764
+     Memory estimate: 269.28161621093750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1764907
+     snebsize = 1764907
+     Memory estimate: 269.30343627929687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1765050
+     snebsize = 1765050
+     Memory estimate: 269.32525634765625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1765336
+     snebsize = 1765336
+     Memory estimate: 269.36889648437500000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1765479
+     snebsize = 1765479
+     Memory estimate: 269.39071655273437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1765622
+     snebsize = 1765622
+     Memory estimate: 269.41253662109375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1765765
+     snebsize = 1765765
+     Memory estimate: 269.43435668945312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1766051
+     snebsize = 1766051
+     Memory estimate: 269.47799682617187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1766337
+     snebsize = 1766337
+     Memory estimate: 269.52163696289062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1766623
+     snebsize = 1766623
+     Memory estimate: 269.56527709960937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1767338
+     snebsize = 1767338
+     Memory estimate: 269.67437744140625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1767767
+     snebsize = 1767767
+     Memory estimate: 269.73983764648437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1769340
+     snebsize = 1769340
+     Memory estimate: 269.97985839843750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1773058
+     snebsize = 1773058
+     Memory estimate: 270.54718017578125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1776061
+     snebsize = 1776061
+     Memory estimate: 271.00540161132812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1781066
+     snebsize = 1781066
+     Memory estimate: 271.76910400390625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1787215
+     snebsize = 1787215
+     Memory estimate: 272.70736694335937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 143
+     nebmax   = 214
+     nebsize  = 1788502
+     snebsize = 1788502
+     Memory estimate: 272.90374755859375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1811521
+     snebsize = 1811521
+     Memory estimate: 276.41616821289062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1818001
+     snebsize = 1818001
+     Memory estimate: 277.40493774414062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1819009
+     snebsize = 1819009
+     Memory estimate: 277.55874633789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1819153
+     snebsize = 1819153
+     Memory estimate: 277.58071899414062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1821457
+     snebsize = 1821457
+     Memory estimate: 277.93228149414062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1822321
+     snebsize = 1822321
+     Memory estimate: 278.06411743164062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1823185
+     snebsize = 1823185
+     Memory estimate: 278.19595336914062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1824625
+     snebsize = 1824625
+     Memory estimate: 278.41567993164062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1825921
+     snebsize = 1825921
+     Memory estimate: 278.61343383789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1826209
+     snebsize = 1826209
+     Memory estimate: 278.65737915039062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1826929
+     snebsize = 1826929
+     Memory estimate: 278.76724243164062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1827793
+     snebsize = 1827793
+     Memory estimate: 278.89907836914062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1827937
+     snebsize = 1827937
+     Memory estimate: 278.92105102539062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1828945
+     snebsize = 1828945
+     Memory estimate: 279.07485961914062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1829377
+     snebsize = 1829377
+     Memory estimate: 279.14077758789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1829665
+     snebsize = 1829665
+     Memory estimate: 279.18472290039062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1830385
+     snebsize = 1830385
+     Memory estimate: 279.29458618164062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1865809
+     snebsize = 1865809
+     Memory estimate: 284.69985961914062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1866241
+     snebsize = 1866241
+     Memory estimate: 284.76577758789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1867537
+     snebsize = 1867537
+     Memory estimate: 284.96353149414062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1867681
+     snebsize = 1867681
+     Memory estimate: 284.98550415039062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1867825
+     snebsize = 1867825
+     Memory estimate: 285.00747680664062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1868977
+     snebsize = 1868977
+     Memory estimate: 285.18325805664062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1869265
+     snebsize = 1869265
+     Memory estimate: 285.22720336914062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1872001
+     snebsize = 1872001
+     Memory estimate: 285.64468383789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1873153
+     snebsize = 1873153
+     Memory estimate: 285.82046508789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1874737
+     snebsize = 1874737
+     Memory estimate: 286.06216430664062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 215
+     nebsize  = 1875313
+     snebsize = 1875313
+     Memory estimate: 286.15005493164062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 144
+     nebmax   = 214
+     nebsize  = 1884673
+     snebsize = 1884673
+     Memory estimate: 287.57827758789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1918641
+     snebsize = 1918641
+     Memory estimate: 292.76138305664062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1919366
+     snebsize = 1919366
+     Memory estimate: 292.87200927734375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1923136
+     snebsize = 1923136
+     Memory estimate: 293.44726562500000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1925456
+     snebsize = 1925456
+     Memory estimate: 293.80126953125000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1926036
+     snebsize = 1926036
+     Memory estimate: 293.88977050781250000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1926326
+     snebsize = 1926326
+     Memory estimate: 293.93402099609375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1927051
+     snebsize = 1927051
+     Memory estimate: 294.04464721679687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1927921
+     snebsize = 1927921
+     Memory estimate: 294.17739868164062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1928211
+     snebsize = 1928211
+     Memory estimate: 294.22164916992187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1932416
+     snebsize = 1932416
+     Memory estimate: 294.86328125000000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1935171
+     snebsize = 1935171
+     Memory estimate: 295.28366088867187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1937636
+     snebsize = 1937636
+     Memory estimate: 295.65979003906250000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1940101
+     snebsize = 1940101
+     Memory estimate: 296.03591918945312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1948946
+     snebsize = 1948946
+     Memory estimate: 297.38555908203125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1954021
+     snebsize = 1954021
+     Memory estimate: 298.15994262695312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1956486
+     snebsize = 1956486
+     Memory estimate: 298.53607177734375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1957356
+     snebsize = 1957356
+     Memory estimate: 298.66882324218750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1960111
+     snebsize = 1960111
+     Memory estimate: 299.08920288085937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1966346
+     snebsize = 1966346
+     Memory estimate: 300.04058837890625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1968376
+     snebsize = 1968376
+     Memory estimate: 300.35034179687500000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1968811
+     snebsize = 1968811
+     Memory estimate: 300.41671752929687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1969826
+     snebsize = 1969826
+     Memory estimate: 300.57159423828125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1970406
+     snebsize = 1970406
+     Memory estimate: 300.66009521484375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1970551
+     snebsize = 1970551
+     Memory estimate: 300.68222045898437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 214
+     nebsize  = 1972581
+     snebsize = 1972581
+     Memory estimate: 300.99197387695312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1982151
+     snebsize = 1982151
+     Memory estimate: 302.45223999023437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1984906
+     snebsize = 1984906
+     Memory estimate: 302.87261962890625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1987661
+     snebsize = 1987661
+     Memory estimate: 303.29299926757812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1996651
+     snebsize = 1996651
+     Memory estimate: 304.66476440429687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 1999551
+     snebsize = 1999551
+     Memory estimate: 305.10726928710937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 215
+     nebsize  = 2027357
+     snebsize = 2027357
+     Memory estimate: 309.35012817382812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 215
+     nebsize  = 2027941
+     snebsize = 2027941
+     Memory estimate: 309.43923950195312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 215
+     nebsize  = 2028671
+     snebsize = 2028671
+     Memory estimate: 309.55062866210937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 215
+     nebsize  = 2029547
+     snebsize = 2029547
+     Memory estimate: 309.68429565429687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 215
+     nebsize  = 2032613
+     snebsize = 2032613
+     Memory estimate: 310.15213012695312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 2048271
+     snebsize = 2048271
+     Memory estimate: 312.54135131835937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 2051751
+     snebsize = 2051751
+     Memory estimate: 313.07235717773437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 2054796
+     snebsize = 2054796
+     Memory estimate: 313.53698730468750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 2055086
+     snebsize = 2055086
+     Memory estimate: 313.58123779296875000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 2055666
+     snebsize = 2055666
+     Memory estimate: 313.66973876953125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 216
+     nebsize  = 2055811
+     snebsize = 2055811
+     Memory estimate: 313.69186401367187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 215
+     nebsize  = 2056246
+     snebsize = 2056246
+     Memory estimate: 313.75823974609375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 216
+     nebsize  = 2057406
+     snebsize = 2057406
+     Memory estimate: 313.93524169921875000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 216
+     nebsize  = 2061466
+     snebsize = 2061466
+     Memory estimate: 314.55474853515625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2090283
+     snebsize = 2090283
+     Memory estimate: 318.95187377929687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2091013
+     snebsize = 2091013
+     Memory estimate: 319.06326293945312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2099773
+     snebsize = 2099773
+     Memory estimate: 320.39993286132812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2104153
+     snebsize = 2104153
+     Memory estimate: 321.06826782226562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2105175
+     snebsize = 2105175
+     Memory estimate: 321.22421264648437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2105467
+     snebsize = 2105467
+     Memory estimate: 321.26876831054687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2105759
+     snebsize = 2105759
+     Memory estimate: 321.31332397460937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2106635
+     snebsize = 2106635
+     Memory estimate: 321.44699096679687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2107657
+     snebsize = 2107657
+     Memory estimate: 321.60293579101562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2110869
+     snebsize = 2110869
+     Memory estimate: 322.09304809570312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2113643
+     snebsize = 2113643
+     Memory estimate: 322.51632690429687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2122111
+     snebsize = 2122111
+     Memory estimate: 323.80844116210937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2122695
+     snebsize = 2122695
+     Memory estimate: 323.89755249023437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2126929
+     snebsize = 2126929
+     Memory estimate: 324.54360961914062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 145
+     nebmax   = 216
+     nebsize  = 2128891
+     snebsize = 2128891
+     Memory estimate: 324.84298706054687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2132477
+     snebsize = 2132477
+     Memory estimate: 325.39016723632812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2134813
+     snebsize = 2134813
+     Memory estimate: 325.74661254882812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2141821
+     snebsize = 2141821
+     Memory estimate: 326.81594848632812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2142989
+     snebsize = 2142989
+     Memory estimate: 326.99417114257812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2149121
+     snebsize = 2149121
+     Memory estimate: 327.92984008789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2149413
+     snebsize = 2149413
+     Memory estimate: 327.97439575195312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2150435
+     snebsize = 2150435
+     Memory estimate: 328.13034057617187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2152041
+     snebsize = 2152041
+     Memory estimate: 328.37539672851562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2153063
+     snebsize = 2153063
+     Memory estimate: 328.53134155273437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2156713
+     snebsize = 2156713
+     Memory estimate: 329.08828735351562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2159195
+     snebsize = 2159195
+     Memory estimate: 329.46701049804687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2179635
+     snebsize = 2179635
+     Memory estimate: 332.58590698242187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2181533
+     snebsize = 2181533
+     Memory estimate: 332.87551879882812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2183285
+     snebsize = 2183285
+     Memory estimate: 333.14285278320312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2186059
+     snebsize = 2186059
+     Memory estimate: 333.56613159179687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2187519
+     snebsize = 2187519
+     Memory estimate: 333.78890991210937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2189125
+     snebsize = 2189125
+     Memory estimate: 334.03396606445312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2191023
+     snebsize = 2191023
+     Memory estimate: 334.32357788085937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2191607
+     snebsize = 2191607
+     Memory estimate: 334.41268920898437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2191753
+     snebsize = 2191753
+     Memory estimate: 334.43496704101562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2192337
+     snebsize = 2192337
+     Memory estimate: 334.52407836914062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2192483
+     snebsize = 2192483
+     Memory estimate: 334.54635620117187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2195695
+     snebsize = 2195695
+     Memory estimate: 335.03646850585937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2209127
+     snebsize = 2209127
+     Memory estimate: 337.08602905273437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2227523
+     snebsize = 2227523
+     Memory estimate: 339.89303588867187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2230589
+     snebsize = 2230589
+     Memory estimate: 340.36087036132812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2233363
+     snebsize = 2233363
+     Memory estimate: 340.78414916992187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2234677
+     snebsize = 2234677
+     Memory estimate: 340.98464965820312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2234823
+     snebsize = 2234823
+     Memory estimate: 341.00692749023437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2235845
+     snebsize = 2235845
+     Memory estimate: 341.16287231445312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2235991
+     snebsize = 2235991
+     Memory estimate: 341.18515014648437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 219
+     nebsize  = 2236137
+     snebsize = 2236137
+     Memory estimate: 341.20742797851562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2236429
+     snebsize = 2236429
+     Memory estimate: 341.25198364257812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2236721
+     snebsize = 2236721
+     Memory estimate: 341.29653930664062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2236867
+     snebsize = 2236867
+     Memory estimate: 341.31881713867187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 219
+     nebsize  = 2237451
+     snebsize = 2237451
+     Memory estimate: 341.40792846679687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2244897
+     snebsize = 2244897
+     Memory estimate: 342.54409790039062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2246941
+     snebsize = 2246941
+     Memory estimate: 342.85598754882812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2255555
+     snebsize = 2255555
+     Memory estimate: 344.17037963867187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2279971
+     snebsize = 2279971
+     Memory estimate: 347.89596557617187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2284381
+     snebsize = 2284381
+     Memory estimate: 348.56887817382812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2285557
+     snebsize = 2285557
+     Memory estimate: 348.74832153320312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2287468
+     snebsize = 2287468
+     Memory estimate: 349.03991699218750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2288791
+     snebsize = 2288791
+     Memory estimate: 349.24179077148437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2289967
+     snebsize = 2289967
+     Memory estimate: 349.42123413085937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2291584
+     snebsize = 2291584
+     Memory estimate: 349.66796875000000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2292319
+     snebsize = 2292319
+     Memory estimate: 349.78012084960937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2293642
+     snebsize = 2293642
+     Memory estimate: 349.98199462890625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 217
+     nebsize  = 2294671
+     snebsize = 2294671
+     Memory estimate: 350.13900756835937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 217
+     nebsize  = 2294965
+     snebsize = 2294965
+     Memory estimate: 350.18386840820312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2295112
+     snebsize = 2295112
+     Memory estimate: 350.20629882812500000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2295553
+     snebsize = 2295553
+     Memory estimate: 350.27359008789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2302021
+     snebsize = 2302021
+     Memory estimate: 351.26052856445312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2305255
+     snebsize = 2305255
+     Memory estimate: 351.75399780273437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2306071
+     snebsize = 2306071
+     Memory estimate: 351.87850952148437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2306363
+     snebsize = 2306363
+     Memory estimate: 351.92306518554687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2309721
+     snebsize = 2309721
+     Memory estimate: 352.43545532226562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2313955
+     snebsize = 2313955
+     Memory estimate: 353.08151245117187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2315853
+     snebsize = 2315853
+     Memory estimate: 353.37112426757812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 219
+     nebsize  = 2316583
+     snebsize = 2316583
+     Memory estimate: 353.48251342773437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 219
+     nebsize  = 2316729
+     snebsize = 2316729
+     Memory estimate: 353.50479125976562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 220
+     nebsize  = 2316875
+     snebsize = 2316875
+     Memory estimate: 353.52706909179687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 221
+     nebsize  = 2318043
+     snebsize = 2318043
+     Memory estimate: 353.70529174804687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2318773
+     snebsize = 2318773
+     Memory estimate: 353.81668090820312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2321255
+     snebsize = 2321255
+     Memory estimate: 354.19540405273437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2324029
+     snebsize = 2324029
+     Memory estimate: 354.61868286132812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2326073
+     snebsize = 2326073
+     Memory estimate: 354.93057250976562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2330599
+     snebsize = 2330599
+     Memory estimate: 355.62118530273437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 219
+     nebsize  = 2333665
+     snebsize = 2333665
+     Memory estimate: 356.08901977539062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2361850
+     snebsize = 2361850
+     Memory estimate: 360.38970947265625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2365378
+     snebsize = 2365378
+     Memory estimate: 360.92803955078125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 220
+     nebsize  = 2369200
+     snebsize = 2369200
+     Memory estimate: 361.51123046875000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2369641
+     snebsize = 2369641
+     Memory estimate: 361.57852172851562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2369935
+     snebsize = 2369935
+     Memory estimate: 361.62338256835937500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2373169
+     snebsize = 2373169
+     Memory estimate: 362.11685180664062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2374198
+     snebsize = 2374198
+     Memory estimate: 362.27386474609375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2375227
+     snebsize = 2375227
+     Memory estimate: 362.43087768554687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2375815
+     snebsize = 2375815
+     Memory estimate: 362.52059936523437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2376109
+     snebsize = 2376109
+     Memory estimate: 362.56546020507812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2377138
+     snebsize = 2377138
+     Memory estimate: 362.72247314453125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2378608
+     snebsize = 2378608
+     Memory estimate: 362.94677734375000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2381548
+     snebsize = 2381548
+     Memory estimate: 363.39538574218750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 220
+     nebsize  = 2382430
+     snebsize = 2382430
+     Memory estimate: 363.52996826171875000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 217
+     nebsize  = 2385958
+     snebsize = 2385958
+     Memory estimate: 364.06829833984375000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2387134
+     snebsize = 2387134
+     Memory estimate: 364.24774169921875000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2390809
+     snebsize = 2390809
+     Memory estimate: 364.80850219726562500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2391397
+     snebsize = 2391397
+     Memory estimate: 364.89822387695312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 220
+     nebsize  = 2400364
+     snebsize = 2400364
+     Memory estimate: 366.26647949218750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 220
+     nebsize  = 2408155
+     snebsize = 2408155
+     Memory estimate: 367.45529174804687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 220
+     nebsize  = 2408596
+     snebsize = 2408596
+     Memory estimate: 367.52258300781250000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2409037
+     snebsize = 2409037
+     Memory estimate: 367.58987426757812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 220
+     nebsize  = 2409184
+     snebsize = 2409184
+     Memory estimate: 367.61230468750000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2410801
+     snebsize = 2410801
+     Memory estimate: 367.85903930664062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 219
+     nebsize  = 2411536
+     snebsize = 2411536
+     Memory estimate: 367.97119140625000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2412067
+     snebsize = 2412067
+     Memory estimate: 368.05221557617187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2413089
+     snebsize = 2413089
+     Memory estimate: 368.20816040039062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 217
+     nebsize  = 2434615
+     snebsize = 2434615
+     Memory estimate: 371.49276733398437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2439760
+     snebsize = 2439760
+     Memory estimate: 372.27783203125000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 217
+     nebsize  = 2442259
+     snebsize = 2442259
+     Memory estimate: 372.65914916992187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 217
+     nebsize  = 2445052
+     snebsize = 2445052
+     Memory estimate: 373.08532714843750000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2445346
+     snebsize = 2445346
+     Memory estimate: 373.13018798828125000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2446816
+     snebsize = 2446816
+     Memory estimate: 373.35449218750000000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2448727
+     snebsize = 2448727
+     Memory estimate: 373.64608764648437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2449315
+     snebsize = 2449315
+     Memory estimate: 373.73580932617187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 217
+     nebsize  = 2451226
+     snebsize = 2451226
+     Memory estimate: 374.02740478515625000 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2453137
+     snebsize = 2453137
+     Memory estimate: 374.31900024414062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 217
+     nebsize  = 2453431
+     snebsize = 2453431
+     Memory estimate: 374.36386108398437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 216
+     nebsize  = 2459605
+     snebsize = 2459605
+     Memory estimate: 375.30593872070312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 147
+     nebmax   = 218
+     nebsize  = 2465485
+     snebsize = 2465485
+     Memory estimate: 376.20315551757812500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2470467
+     snebsize = 2470467
+     Memory estimate: 376.96334838867187500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2479227
+     snebsize = 2479227
+     Memory estimate: 378.30001831054687500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 218
+     nebsize  = 2485505
+     snebsize = 2485505
+     Memory estimate: 379.25796508789062500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 217
+     nebsize  = 2486965
+     snebsize = 2486965
+     Memory estimate: 379.48074340820312500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
+     nebsize  = 2488279
+     snebsize = 2488279
+     Memory estimate: 379.68124389648437500 MB
+
+- brenner_scr -
+     The brenner_scr potential has been compiled with screening functions.
+     (Re)allocating internal neighbor list buffers.
+     nebavg   = 146
+     nebmax   = 216
